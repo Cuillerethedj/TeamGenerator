@@ -1,0 +1,29 @@
+{
+  "name": "TeamGenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cuillerethedj/TeamGenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cuillerethedj/TeamGenerator/issues"
+  },
+  "homepage": "https://github.com/Cuillerethedj/TeamGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2",
+    "install": "^0.13.0",
+    "jest": "^27.0.6"
+  }
+}
