@@ -1,15 +1,14 @@
 //Require Intern  
-const intern = require("../lib/Intern");
+const Intern = require("../lib/Intern");
 
 describe('Intern',() => {
-	Test('Inter class contains name, id, email, school', () => {
-	//create test on Intern class
+	test('Inter class contains name, id, email, school', () => {
 	const obj = new Intern();
 
-	expect('employeeName'in object) .toEqual(true);
-	expect('id'in object) .toEqual(true);
-	expect('email'in object) .toEqual(true);
-	expect('school'in object) .toEqual(true);
+	expect('name'in obj).toEqual(true);
+	expect('id'in obj).toEqual(true);
+	expect('email'in obj).toEqual(true);
+	expect('school'in obj).toEqual(true);
 	})
 
 	test('Intern class contains name, id, email, school', ()=> {
@@ -17,21 +16,21 @@ describe('Intern',() => {
 	const test = 'teststring'
 	const obj = new Intern('name','id','email',test);
 
-	expect(obj.school()).toEqual(test);
+	expect(obj.school).toEqual(test);
 	})
 
-	test('Intern class contains name, id, email, school', ()=> {
-	//test to see if getRole() returns "Intern"
-	const obj = new Intern();
+// 	test('Intern class contains name, id, email, school', ()=> {
+// 	//test to see if getRole() returns "Intern"
+// 	const obj = new Intern();
 
-	expect(obj.constructor.name()).toEqual('Intern');
-	})
+// 	expect(obj.constructor.name()).toEqual('Intern');
+// 	})
 	test('should return Intern school when call getSchool', ()=> {
 		//test to see if you can set school using our constructor
 		const test = 'University ofj'
 		const obj = new Intern('name','id','email',test);
 
-		expect(obj.getschool()).toEqual(test);
+		expect(obj.getSchool()).toEqual(test);
 	})
 //test to see if getGithub() returns role
 test('should return Intern role when cal getRole()', ()=> {
@@ -46,10 +45,3 @@ test('should return Intern role when cal getRole()', ()=> {
 
 
 	});
-//create test on Intern class
-
-//test to see if you can set school using our constructor
-
-//test to see if getRole() returns "Intern"
-
-//test to see if getSchool() returns school testvalue

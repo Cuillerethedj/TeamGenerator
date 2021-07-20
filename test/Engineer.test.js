@@ -2,14 +2,14 @@
 	const Engineer = require("../lib/Engineer");
 
 	describe('Engineer',() => {
-	Test('Enginerr class contains name, id, email, github', () => {
+	test('Engineer class contains name, id, email, github', () => {
 	//create test on Engineer class
 	const obj = new Engineer();
 
-	expect('employeeName'in object) .toEqual(true);
-	expect('id'in object) .toEqual(true);
-	expect('email'in object) .toEqual(true);
-	expect('githubUsername'in object) .toEqual(true);
+	expect('name'in obj).toEqual(true);
+	expect('id'in obj).toEqual(true);
+	expect('email'in obj).toEqual(true);
+	expect('github'in obj).toEqual(true);
 	})
 
 	test('Engineer class contains name, id, email, github', ()=> {
@@ -17,21 +17,16 @@
 	const test = 'teststring'
 	const obj = new Engineer('name','id','email',test);
 
-	expect(obj.githubUsername()).toEqual(test);
+	expect(obj.github).toEqual(test);
 	})
 
-	test('Engineer class contains name, id, email, github', ()=> {
-	//test to see if getRole() returns "Engineer"
-	const obj = new Engineer();
 
-	expect(obj.constructor.name()).toEqual('Engineer');
-	})
 	test('should return engineer github when call getGithub', ()=> {
 		//test to see if you can set github using our constructor
-		const test = 'cuillerethedjgithub'
-		const obj = new Engineer('name','id','email',test);
+		const username = 'cuillerethedjgithub'
+		const obj = new Engineer('name','id','email',username);
 
-		expect(obj.hitGithube()).toEqual(test);
+		expect(obj.getGithub()).toEqual(username);
 	})
 //test to see if getGithub() returns github test value
 test('should return engineer role when cal getRole()', ()=> {
@@ -39,8 +34,6 @@ test('should return engineer role when cal getRole()', ()=> {
 
 	expect(obj.getRole()).toEqual('Engineer');
 	})
-
-
 
 
 

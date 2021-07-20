@@ -5,12 +5,14 @@ const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 
-const generateHTML = require('./generateHTML');
+const generateHTML = require('./utils/generateHTML');
 
 const team = [];
 
-function newManager()
-{
+//1 Ask all the questions
+//2 With those answers generate a class person and stick em in the team array
+
+function newManager(){
     inquirer
         .prompt([
         {type: 'input', 
@@ -38,8 +40,7 @@ function newManager()
         })
 }
 
-function newEmployee()
-{
+function newEmployee() {
     inquirer
         .prompt([
             {type: 'list', 
@@ -81,9 +82,9 @@ function newEmployee()
 
             else if(response.role == "Engineer")
             {
-                let github = response.github;
-                let engineer = new Engineer(mName,employeeID,email,github);
-                team.push(engineer);
+              let github = response.github;
+              let engineer = new Engineer(mName,employeeID,email,github);
+              team.push(engineer);
             }
 
             if(response.add == true)
@@ -93,9 +94,13 @@ function newEmployee()
         })
 }
 
-const createHTML = () => 
-{
-    fs.writeFile("test.html", generateHTML(team), (err) => {
+const createHTML = () => {
+
+  console.log('Team array!!', team)
+
+  var html = generateHTML(team)
+
+    fs.writeFile("test.html", html, (err) => {
         err ? console.log("Error: The following program has not worked") : console.log("A HTML has been created for you!")
     })
 }
