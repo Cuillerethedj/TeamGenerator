@@ -3,7 +3,7 @@
 
 ## Description 
 
-Your task is to build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.
+to build a node.js command-line app that takes in info 
 
 ## Table of Contents
 
@@ -16,11 +16,11 @@ Your task is to build a Node.js command-line application that takes in informati
 
 ## Installation
 
-clone from github
+clone it from Github
 
 ## Usage
 
-to generate a webpage that displays my team's basic info
+youll be able to to generate a webpage that displays a team basic info.
 
 ## Usage License
 This project is license to MIT
@@ -28,17 +28,15 @@ The link to this license is https://opensource.org/licenses/MIT
 
 ## Contributing 
 
-SO THAT I have quick access to their emails and GitHub profiles
+Jacob Guiro
 
 ## Tests
-https://drive.google.com/file/d/1YgkjimX1DBIwn5qKAIUgb9Ftgm33HbYH/view
 
-yes
+no
 
 ## Questions
 
-https://github.com/Cuillerethedj  
-
+https://github.com/cuillerethedj  
 
 
 cuillerethedj@gmail.com
